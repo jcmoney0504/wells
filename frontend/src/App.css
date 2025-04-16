@@ -1,0 +1,43 @@
+.main_container{
+    background-image: url("/bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Adds space between items */
+    padding: 0;
+    
+
+}
+
+.footer-links li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #3b3331;
+}
+
+.footer-links li:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.5rem; /* Adds spacing between text and separator */
+    color: #666; /* Adjust color as needed */
+}
+
+@media screen and (max-width: 500px) {
+    .footer-links li:not(:last-child)::after {
+        content: "";/* Adjust color as needed */
+    }
+}

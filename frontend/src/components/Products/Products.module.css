@@ -1,0 +1,44 @@
+.wrapper{
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container{
+    max-width: 870px;
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container>div{
+    border: 1px solid #bfbfbd;
+    padding: 1rem;
+    padding-left: 2rem;
+    word-wrap: break-word;
+}
+
+.list {
+    list-style-type: square !important;
+    padding-left: 2rem; 
+    width: 100%;
+}
+
+.list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6rem;
+}
+
+.container>:last-child{
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper{
+        background-color: white;
+    }
+}

@@ -1,0 +1,225 @@
+@font-face {
+    font-family: forgo-san-lt;
+    src: url("/fonts/wellsfargosans-lt.ttf");
+  }
+
+  @font-face {
+    font-family: forgo-serif;
+    src: url("/fonts/wellsfargoserif-lt.ttf");
+  }
+
+.wrapper{
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.container{
+    padding: 4rem 1rem;
+    max-width: 870px;
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: forgo-serif;
+    gap: 1rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.input_container{
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #9c9191;
+    border-radius: 1.1rem;
+    padding: 0.3rem 1rem;
+    width: 28rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4rem;
+    position: relative;
+}
+
+.input_container >:first-child{
+    flex: 1;
+}
+ 
+
+label{
+    color: #665e5c;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.input{
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+   line-height: 2rem;
+   font-size: 1.2rem;
+}
+
+.input::placeholder{
+    color: transparent;
+}
+
+.input_container:has(.input:focus) label,
+.input_container:has(.input:not(:placeholder-shown)) label {
+    font-size: 1rem;
+    top: 0.2rem;
+}
+
+
+.input_container2{
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #9c9191;
+    border-radius: 1.1rem;
+    padding: 0.3rem 1rem;
+    width: 28rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4rem;
+    position: relative;
+}
+
+.input_container2 >:first-child{
+    flex: 1;
+}
+ 
+
+.label{
+    color: #665e5c;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.input2{
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+   line-height: 2rem;
+   font-size: 1.2rem;
+}
+
+.input2::placeholder{
+    color: transparent;
+}
+.input_container2:has(.input2:focus) .label,
+.input_container2:has(.input2:not(:placeholder-shown)) .label {
+    font-size: 1rem;
+    top: 0.2rem;
+}
+
+.input_container2:has(.input2:focus){
+    border: 4px solid #6048AD;
+    box-shadow: 0 0 20px #6048AD;
+}
+
+.input_container:has(.input:focus){
+    border: 4px solid #6048AD;
+    box-shadow: 0 0 20px #6048AD;
+}
+
+.cross{
+    cursor: pointer;
+}
+
+.checkbox{
+    max-width:  25rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checkbox>input{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.checkbox>span{
+    font-size: 1rem;
+    font-weight: lighter ;
+}
+
+.toggle{
+    color: #463782;
+    font-size: .9375rem;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.para{
+    max-width: 25rem;
+    width: 100%;
+    color: #665e5c;
+    font-size: 0.8rem;
+}
+
+.btn:disabled{
+    background-color: #e2dede;
+    border: 1px solid #c0bcbc;
+    color: #b5adad;
+    cursor: default;
+}
+
+.btn{
+    padding: 0.6rem 4rem;
+    border-radius: 344px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #d71e28;
+    border: 1px solid #d71e28;                
+    color: white;
+    cursor: pointer;
+}
+
+.forgot{
+    max-width: 24rem;
+    width: 100%;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    color: #5a469b;
+}
+
+.forgot > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.forgot:hover a{
+text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper{
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        padding: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .input_container, .input_container2{
+        width: 100%;
+    }
+}

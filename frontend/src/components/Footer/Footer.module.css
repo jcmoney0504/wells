@@ -1,0 +1,28 @@
+.wrapper{
+    margin-top: 3rem;
+    background-color: #F4F0ED;
+    padding: 3rem 0;
+    border-top: 1px solid #b5adad;
+}
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+    width: 100%;
+    padding: 1rem;
+}
+
+.container >:last-child{
+    margin-top: 3rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+    border-top: 1px solid #b5adad;
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper{
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+}
